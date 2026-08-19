@@ -79,6 +79,71 @@ A organização foi separada por responsabilidade para deixar o ciclo de build, 
 - `styles/`: design tokens e componentes compartilhados
 - `public/`: artefatos gerados para execução/produção
 
+## Requisitos
+
+- Node.js 18+
+- npm
+- Git
+- VS Code
+
+## APIs consumidas
+
+### APOD
+
+- URL: <https://api.nasa.gov/planetary/apod>
+- Exibe a imagem ou vídeo astronômico do dia.
+- Permite consulta por datas.
+- Apresenta descrição e conteúdo visual associado à data selecionada.
+
+### Parâmetros
+
+- Obrigatórios:
+  - api_key
+
+- Opcionais:
+  - date (YYYY-MM-DD)
+  - start_date
+  - end_date
+  - count
+  - thumbs
+
+### NeoWs
+
+- URL: <https://api.nasa.gov/neo/rest/v1/feed>
+- Consulta objetos próximos da Terra.
+- Apresenta dados de distância, magnitude, velocidade relativa, diâmetro estimado e risco potencial.
+
+Parâmetros:
+
+- Obrigatórios:
+  - api_key
+
+- Opcionais:
+  - start_date (YYYY-MM-DD)
+  - end_date (YYYY-MM-DD)
+  - detailed
+  - page
+
+### InSight
+
+- URL: <https://api.nasa.gov/insight_weather/>
+- Mostra dados meteorológicos de Marte.
+- Exibe temperatura, pressão e velocidade do vento por sol marciano.
+
+Parâmetros:
+
+- Obrigatórios:
+  - api_key
+
+- Opcionais:
+  - feedtype
+  - ver
+  - format
+
+## Licença
+
+Uso educacional e didático.
+
 ## Quick start
 
 ### 1) Instalar dependências
@@ -139,176 +204,3 @@ http://localhost:8080
 ```
 
 Se a porta estiver ocupada, o projeto usa a próxima disponível.
-
-## Requisitos
-
-- Node.js 18+
-- npm
-- Git
-- VS Code
-
-## APIs consumidas
-
-### APOD
-
-- URL: <https://api.nasa.gov/planetary/apod>
-- Exibe a imagem ou vídeo astronômico do dia.
-- Permite consulta por datas.
-- Apresenta descrição e conteúdo visual associado à data selecionada.
-
-### Parâmetros
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - date (YYYY-MM-DD)
-  - start_date
-  - end_date
-  - count
-  - thumbs
-
-### NeoWs
-
-- URL: <https://api.nasa.gov/neo/rest/v1/feed>
-- Consulta objetos próximos da Terra.
-- Apresenta dados de distância, magnitude, velocidade relativa, diâmetro estimado e risco potencial.
-
-Parâmetros:
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - start_date (YYYY-MM-DD)
-  - end_date (YYYY-MM-DD)
-  - detailed
-  - page
-
-### InSight
-
-- URL: <https://api.nasa.gov/insight_weather/>
-- Mostra dados meteorológicos de Marte.
-- Exibe temperatura, pressão e velocidade do vento por sol marciano.
-
-Parâmetros:
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - feedtype
-  - ver
-  - format
-
-## Licença
-
-Uso educacional e didático.
-
-## Requisitos
-
-- Node.js 18+
-- npm
-- Git
-- VS Code
-
-## Como executar localmente
-
-### via package.json (recomendado)
-
-Na raiz do projeto:
-
-```bash
-npm install
-npm run dev
-```
-
-O comando de desenvolvimento serve a aplicação localmente sem depender do build. Se quiser definir a porta manualmente:
-
-```bash
-PORT=8080 npm run dev
-```
-
-Se o servidor estiver bloqueado pela porta ocupada, use:
-
-```bash
-npm run kill:8080
-```
-
-ou:
-
-```powershell
-netstat -ano | findstr :8080
-taskkill /PID <PID> /F
-```
-
-Antes do uso de API da NASA, prepare o arquivo de ambiente local:
-
-```bash
-cp .env.example .env.local
-# edite .env.local e informe a sua NASA_API_KEY
-```
-
-A URL local normalmente será:
-
-```text
-http://localhost:8080
-```
-
-## APIs consumidas
-
-### APOD
-
-- URL: <https://api.nasa.gov/planetary/apod>
-- Exibe a imagem ou vídeo astronômico do dia.
-- Permite consulta por datas.
-- Apresenta descrição e conteúdo visual associado à data selecionada.
-
-### Parâmetros
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - date (YYYY-MM-DD)
-  - start_date
-  - end_date
-  - count
-  - thumbs
-
-### NeoWs
-
-- URL: <https://api.nasa.gov/neo/rest/v1/feed>
-- Consulta objetos próximos da Terra.
-- Apresenta dados de distância, magnitude, velocidade relativa, diâmetro estimado e risco potencial.
-
-Parâmetros:
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - start_date (YYYY-MM-DD)
-  - end_date (YYYY-MM-DD)
-  - detailed
-  - page
-
-### InSight
-
-- URL: <https://api.nasa.gov/insight_weather/>
-- Mostra dados meteorológicos de Marte.
-- Exibe temperatura, pressão e velocidade do vento por sol marciano.
-
-Parâmetros:
-
-- Obrigatórios:
-  - api_key
-
-- Opcionais:
-  - feedtype
-  - ver
-  - format
-
-## Licença
-
-Uso educacional e didático.
