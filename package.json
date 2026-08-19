@@ -1,0 +1,20 @@
+{
+  "name": "nasa-open-apis",
+  "version": "1.0.0",
+  "description": "Projeto colaborativo em HTML, CSS e JavaScript que consome APIs publicas da NASA.",
+  "main": "apod.js",
+  "scripts": {
+    "start": "node scripts/dev/dev-server.js",
+    "dev": "node scripts/dev/dev-server.js",
+    "dev:8080": "PORT=8080 node scripts/dev/dev-server.js",
+    "dev:port": "PORT=${PORT:-8080} node scripts/dev/dev-server.js",
+    "kill:8080": "node -e \"const { execSync } = require('child_process'); try { const out = execSync('netstat -ano | findstr :8080', { stdio: ['ignore', 'pipe', 'pipe'] }).toString(); const pids = [...new Set(out.split(/\\r?\\n/).map(line => line.trim()).filter(Boolean).map(line => line.split(/\\s+/).pop()).filter(pid => /^\\d+$/.test(pid)))]; if (!pids.length) { console.log('Porta 8080 livre.'); process.exit(0); } for (const pid of pids) { try { execSync(`taskkill /PID ${pid} /F`); console.log('PID', pid, 'encerrado.'); } catch (error) { console.log('PID', pid, 'nao pode ser encerrado.'); } } } catch (error) { console.log('Porta 8080 livre.'); }\"",
+    "build": "node scripts/build/build.js production",
+    "deploy": "firebase deploy --only hosting"
+  },
+  "author": "Sabrina B. Moreira",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.17.1"
+  }
+}

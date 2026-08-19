@@ -1,0 +1,28 @@
+# Dependências e saídas geradas
+/node_modules/
+/public/
+/dist/
+/out-tsc/
+/tmp/
+/.angular/
+/.cache/
+
+# Ambiente local e segredo da API
+.env
+.env.*
+!.env.example
+environment.js
+
+# Firebase CLI
+/.firebase/
+firebase-debug.log
+
+# Logs, cobertura e arquivos do sistema/IDE
+*.log
+/coverage/
+/.nyc_output/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.iml

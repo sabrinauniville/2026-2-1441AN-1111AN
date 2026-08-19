@@ -1,0 +1,8 @@
+---
+description: Full restriction for this project.
+alwaysApply: true
+---
+
+Follow the complete policy in `../../.rules/cursor-rules.md`.
+
+This project is currently restricted for automated changes

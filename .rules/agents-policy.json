@@ -1,0 +1,13 @@
+{
+  "projectPolicy": {
+    "allowReads": false,
+    "allowAnalysis": false,
+    "allowPlanning": false,
+    "allowEdits": false,
+    "allowCommandExecution": false,
+    "allowSuggestions": false,
+    "allowGuidance": false,
+    "allowAnyOtherOutput": false,
+    "genericRefusalMessage": "This project is currently restricted for automated changes"
+  }
+}
