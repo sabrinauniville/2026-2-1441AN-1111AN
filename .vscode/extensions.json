@@ -1,0 +1,43 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "nathanchapman.javascriptsnippets",
+    "wayou.vscode-todo-highlight",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "EditorConfig.EditorConfig",
+    "ritwickdey.LiveServer",
+    "DavidAnson.vscode-markdownlint",
+    "MS-CEINTL.vscode-language-pack-pt-BR",
+    "ms-vscode.sublime-keybindings",
+    "emmetio.mithril-emmet"
+  ],
+  "unwantedRecommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "continue.continue",
+    "Codeium.codeium",
+    "TabNine.tabnine-vscode",
+    "saoudrizwan.claude-dev",
+    "rooveterinaryinc.roo-cline",
+    "amazonwebservices.amazon-q-vscode",
+    "Google.geminicodeassist",
+    "meteorstudio.cursorcode",
+    "ktiays.aicursor",
+    "ms-azuretools.vscode-azure-github-copilot",
+    "feiskyer.chatgpt-copilot",
+    "vscjava.migrate-java-to-azure",
+    "Blackboxapp.blackboxagent",
+    "Blackboxapp.blackbox",
+    "GitHub.copilot-chat",
+    "genieai.chatgpt-vscode",
+    "EasyCodeAI.chatgpt-gpt4-gpt3-vscode",
+    "feiskyer.chatgpt-copilot",
+    "YaleHuang.chatgpt-ai",
+    "openai.chatgpt",
+    "TalDennis-UnfoldAI-ChatGPT-Copilot.unfoldai",
+    "colourafredi.chatgpt-dev"
+  ]
+}

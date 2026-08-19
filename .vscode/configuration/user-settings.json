@@ -1,0 +1,94 @@
+{
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.rulers": ,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.startupEditor": "none",
+  "update.showReleaseNotes": false,
+  "files.associations": {
+    "*.java": "java"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  /* Formatações por Linguagem */
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  /* --- FORÇAR AGENTES E IA --- */
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "chat.agent.maxRequests": 30,
+  "terminal.integrated.initialHint": false,
+  "claudeCode.preferredLocation": "panel",
+  /* Compilador Nativo Experimental */
+  "typescript.experimental.useTsgo": true,
+  /* --- AUTORIZAÇÕES DE AMBIENTE DOS DESENVOLVEDORES --- */
+  "chat.tools.terminal.autoApprove": {
+    "/^cd .*\\/repos\\/aprendaweb && npm run 2>&1 \\| grep -A 30 \"available\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
+  "chat.tools.urls.autoApprove": {
+    "https://visualstudio.com": true,
+    "https://github.com*": true,
+    "https://*.nasa.gov": true
+  }
+}
