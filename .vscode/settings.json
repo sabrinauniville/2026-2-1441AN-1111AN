@@ -28,5 +28,10 @@
   "chat.commandCenter.enabled": false,
   "chat.tools.terminal.autoApprove": {},
   "chat.tools.urls.autoApprove": {},
-  "workbench.editorAssociations": {}
+  "workbench.editorAssociations": {},
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+  "github.copilot.chat.languageContext.typescript.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "on"
 }

@@ -33,62 +33,73 @@
       "args": [],
       "icon": "terminal-cmd"
     },
-    "Git Bash": {
-      "source": "Git Bash"
-    }
-  },
-  /* Formatações por Linguagem */
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  /* --- FORÇAR AGENTES E IA --- */
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true
-  },
-  "github.copilot.editor.enableCodeActions": true,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "editor.inlineSuggest.enabled": true,
-  "chat.agent.maxRequests": 30,
-  "terminal.integrated.initialHint": false,
-  "claudeCode.preferredLocation": "panel",
-  /* Compilador Nativo Experimental */
-  "typescript.experimental.useTsgo": true,
-  /* --- AUTORIZAÇÕES DE AMBIENTE DOS DESENVOLVEDORES --- */
-  "chat.tools.terminal.autoApprove": {
-    "/^cd .*\\/repos\\/aprendaweb && npm run 2>&1 \\| grep -A 30 \"available\"$/": {
-      "approve": true,
-      "matchCommandLine": true
-    }
-  },
-  "chat.tools.urls.autoApprove": {
-    "https://visualstudio.com": true,
-    "https://github.com*": true,
-    "https://*.nasa.gov": true
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.detectIndentation": false,
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "explorer.compactFolders": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+      "Git Bash": {
+        "source": "Git Bash"
+      }
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[java]": {
+      "editor.defaultFormatter": "redhat.java"
+    },
+    "chat.agent.maxRequests": 30,
+    "terminal.integrated.initialHint": false,
+    "claudeCode.preferredLocation": "panel",
+    "typescript.experimental.useTsgo": true,
+    "chat.tools.terminal.autoApprove": {
+      "/^cd .*\\/repos\\/aprendaweb && npm run 2>&1 \\| grep -A 30 \"available\"$/": {
+        "approve": true,
+        "matchCommandLine": true
+      }
+    },
+    "chat.tools.urls.autoApprove": {
+      "https://visualstudio.com": true,
+      "https://github.com*": true,
+      "https://*.nasa.gov": true
+    },
+    "extensions.ignoreRecommendations": true,
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false
+    },
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "editor.inlineSuggest.enabled": false,
+    "chat.agent.enabled": false,
+    "workbench.editorAssociations": {}
   }
 }
